@@ -17,5 +17,14 @@ ffmpeg version
 
 > ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
 
-# Usage command line
+# Usage whisper from command line
+映像データから文字起こしする標準的な使い方ができる
 whisper tmp/rec-3037999527844842.mp4 --language Japanese
+
+# Usage realtime_whisper.py
+`tmp/`ディレクトリ配下に文字起こししたいデータ(mp4, mp3, wav等)を配置
+`realtime_whisper.py`のfile_nameにファイル名を設定
+
+CLIから
+python realtime_whisper.py
+を実行
